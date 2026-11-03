@@ -862,11 +862,12 @@
                     <div class="alert alert-info d-flex gap-2 align-items-start mb-4" style="font-size:.85rem;">
                         <i class="fas fa-info-circle fs-5 mt-1 flex-shrink-0"></i>
                         <div>
-                            <strong>How to use:</strong><br>
-                            1. Download the <a href="{{ route('products.template') }}" class="alert-link">CSV Template</a> first.<br>
-                            2. Fill in your data in Excel and save as <strong>CSV</strong>.<br>
-                            3. Upload here to validate and preview the changes.<br>
-                            4. Confirm the preview to actually import the data.
+                            <strong>Zaroori Hidayat (Import Guidelines):</strong><br>
+                            1. Pehle <a href="{{ route('products.template') }}" class="alert-link fw-bold text-decoration-underline">CSV Template Download</a> karein.<br>
+                            2. <strong>Compulsory Fields:</strong> <code>Product Name</code>, <code>Variant Name</code>, <code>Variant Sale Price</code>, <code>Variant Purch Price</code> zaroori hain.<br>
+                            3. <strong>Naye Product ke liye:</strong> <code>Item Code</code> khali (blank) chhod dein — system khud naya code assign karega. Ek product ke multiple variants ke liye Product Name same rakhein.<br>
+                            4. <strong>Carton &amp; Pieces:</strong> Carton items ke liye <code>Size Mode = by_cartons</code> aur <code>Pieces Per Box</code> dein. Aap <code>Carton Stock</code> aur <code>Loose Pieces Stock</code> dono enter kar sakte hain.<br>
+                            5. File save karte waqt <strong>CSV (Comma delimited)</strong> format select karein.
                         </div>
                     </div>
                     <div class="form-group mb-3">
