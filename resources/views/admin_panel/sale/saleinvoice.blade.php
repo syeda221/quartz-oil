@@ -915,7 +915,7 @@
                             <td class="text-end">{{ number_format(abs($finalPayable), 2) }}</td>
                         </tr>
 
-                        @if (round(abs($previousBalance), 2) > 0)
+                        {{-- @if (round(abs($previousBalance), 2) > 0)
                             <tr>
                                 <td class="tot-label">Previous Balance</td>
                                 <td class="tot-val">
@@ -923,9 +923,9 @@
                                     <small class="text-muted fw-bold">({{ $previousBalance >= 0 ? 'Dr' : 'Cr' }})</small>
                                 </td>
                             </tr>
-                        @endif
+                        @endif --}}
 
-                        <tr>
+                        {{-- <tr>
                             <td class="tot-label text-success">Paid / Cash Received</td>
                             <td class="tot-val text-success">{{ number_format($paidAmount, 2) }}</td>
                         </tr>
@@ -945,7 +945,7 @@
                                     <span class="badge-balance">{{ $finalBal >= 0 ? 'Dr' : 'Cr' }}</span>
                                 </td>
                             </tr>
-                        @endif
+                        @endif --}}
                     </table>
                 </div>
             </div>

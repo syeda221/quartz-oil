@@ -516,7 +516,7 @@
             </div>
             @endif
 
-            @if(!$isWalkin)
+            {{-- @if(!$isWalkin)
             @php
                 $finalBalance = $previousBalance + $sale->total_net - $sale->cash;
             @endphp
@@ -524,7 +524,7 @@
                 <span>CLOSING BALANCE:</span>
                 <span>{{ number_format(abs($finalBalance), 0) }} {{ $finalBalance >= 0 ? 'Dr' : 'Cr' }}</span>
             </div>
-            @endif
+            @endif --}}
         </div>
 
         <!-- Footer -->
